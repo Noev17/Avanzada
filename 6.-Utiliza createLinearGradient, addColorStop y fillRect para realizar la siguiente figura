@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <canvas width="800px" height="800px"  id="mycanvas" >
+
+    </canvas>
+
+    <script>
+
+        
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext('2d');
+       
+        var MyGradient=ctx.createLinearGradient(0,250,170,0);
+        MyGradient.addColorStop(0,"green");
+        MyGradient.addColorStop(0.5,"yellow");
+        MyGradient.addColorStop(1,"red");
+        ctx.fillStyle=MyGradient;
+        ctx.fillRect(20,20,650,400);    
+          
+
+
+            
+
+
+    </script>
+    
+</body>
+
+<style>
+   /*  canvas{
+       background: black; 
+    }*/
+</style>
+</html>
