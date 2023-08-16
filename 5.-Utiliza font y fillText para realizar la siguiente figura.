@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <canvas width="800px" height="800px"  id="mycanvas" >
+
+    </canvas>
+
+    <script>
+
+        
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext('2d');
+       
+           
+          
+ctx.font = "30px arial";
+// Sintaxis: text, x, y
+ctx.strokeText("-Hola Hola", 0, 50);
+ctx.fillText("-Hola Hola", 1, 52);
+// Se puede cambiar durante la ejecución
+ctx.strokeStyle = "red";
+ctx.strokeText("-adios...", 170, 50);
+ctx.font = "20px Courier New";
+ctx.fillStyle = "yellow";
+
+            
+
+
+    </script>
+    
+</body>
+
+<style>
+   /*  canvas{
+       background: black; 
+    }*/
+</style>
+</html>
