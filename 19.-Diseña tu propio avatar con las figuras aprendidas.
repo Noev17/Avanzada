@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <canvas width="800" height="800"  id="canvas" >
+
+    </canvas>
+
+    <script>
+        
+       
+       
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+       // Cabello negro
+       ctx.beginPath();
+        ctx.arc(100, 200, 60, Math.PI, 0);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+        
+
+
+        // Cara
+        ctx.beginPath();
+        ctx.arc(100, 100, 60, 0, Math.PI * 2);
+        ctx.fillStyle = "#dc7633";
+        ctx.fill();
+        ctx.closePath();
+
+        // Ojos
+        ctx.beginPath();
+        ctx.arc(70, 80, 12, 0, Math.PI * 2);
+        ctx.arc(130, 80, 12, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(70, 80, 5, 0, Math.PI * 2);
+        ctx.arc(130, 80, 5, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+       
+
+        // Nariz
+        ctx.beginPath();
+        ctx.moveTo(100, 95);
+        ctx.lineTo(90, 115);
+        ctx.lineTo(110, 115);
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+        ctx.closePath();
+
+        // Boca
+        ctx.beginPath();
+        ctx.arc(100, 120, 30, 0, Math.PI, false);
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 6;
+        ctx.stroke();
+        ctx.closePath();
+
+        // Orejas
+        ctx.beginPath();
+        ctx.arc(40, 100, 10, 0, Math.PI * 2);
+        ctx.arc(160, 100, 10, 0, Math.PI * 2);
+        ctx.fillStyle = "#dc7633";
+        ctx.fill();
+        ctx.closePath();
+
+        // Cabello negro
+        ctx.beginPath();
+        ctx.arc(100, 75, 60, Math.PI, 0);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        // Lentes
+        ctx.beginPath();
+        ctx.arc(70, 80, 20, 0, Math.PI * 2);
+       
+        ctx.arc(130, 80, 20, 0, Math.PI * 2);
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.closePath();
+       
+    </script>
+    
+</body>
+
+<style>
+   /*  canvas{
+       background: black; 
+    }*/
+</style>
+</html>
